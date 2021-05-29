@@ -5,4 +5,4 @@
 - Sobreposição
 - Palavra *Super*
 - Anotação *@Override*
-- Classes e métodos *final*
+- Classes e métodos *final* (não permite que outras classes herdem seus atributos)
