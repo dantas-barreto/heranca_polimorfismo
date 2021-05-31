@@ -1,7 +1,5 @@
 package application;
 
-import javax.security.auth.login.AccountNotFoundException;
-
 import entities.Account;
 import entities.BusinessAccount;
 import entities.SavingsAccount;
@@ -51,5 +49,18 @@ public class Main {
 		Account acc8 = new BusinessAccount(1005, "jonas", 5000.0, 2000.0);
 		acc8.withdraw(200.0);
 		System.out.println(acc8.getBalance());
+		
+		//POLIMORFISMO
+		
+		Account x = new Account(1020, "Alex", 1000.0);
+		Account y = new SavingsAccount(1023, "Maria", 1000.0, 0.01);
+		
+		x.withdraw(50.0);
+		y.withdraw(50.0);
+		
+		System.out.println(x.getBalance());
+		System.out.println(y.getBalance());
+		
+		
 	}
 }
